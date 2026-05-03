@@ -1,16 +1,15 @@
-## Hi there 👋
+## Moritz Richter
 
-<!--
-**morichtereur/morichtereur** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Finance & Strategy Consultant based in Zürich, working on CFO Advisory and finance transformation.
 
-Here are some ideas to get you started:
+I build tools that apply AI to finance and strategy work — RAG systems, intelligence pipelines, dashboards.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Current projects:**
+- [DAX Intelligence](https://github.com/morichtereur/dax-intelligence) — Query 15 DAX annual reports with AI
+- Competitor Intelligence Pipeline — Automated tracking of MBB, Big4, and European clients
+
+**Stack:** Python · Claude API · ChromaDB · Streamlit · Power BI
+
+**Background:** MSc Financial Economics, Erasmus University Rotterdam
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/moritz-richter-28297119a/)
