@@ -1,7 +1,7 @@
 ## Moritz Richter
 
 Finance and strategy consultant in Zürich — CFO advisory, global business services,
-finance transformation. Currently at EY, before that KPMG.
+finance transformation. Currently at EY.
 
 I write code because consulting runs on information that arrives a week too late to
 change a decision. Most of what's here is an attempt to close that gap: pipelines that
