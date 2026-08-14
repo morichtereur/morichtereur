@@ -26,9 +26,17 @@ answer without a source. Chunking is word-based at 800/100 rather than character
 because German annual report layouts break character splitters in ways that are
 tedious to debug.
 
+**[P2P Process Mining](https://github.com/morichtereur/p2p-process-mining)**
+251,734 real purchase orders (BPI Challenge 2019), reconstructed into a directly-follows
+process map with DuckDB and networkx. Only 20% of cases follow the process's own most
+common path; rework carries a 19.6-day cycle-time penalty that turns out to have no
+correlation with how often it fires. The one control the system actually enforces —
+invoice verification gated on goods receipt — holds with zero exceptions across 11,076
+cases; the one it doesn't holds up 1.6% of the time.
+
 ### How I build
 
-Python, Claude API, ChromaDB, SQLite, Streamlit, Power BI. Where something needs a UI
+Python, Claude API, DuckDB, ChromaDB, SQLite, Streamlit, Power BI. Where something needs a UI
 I tend to write plain HTML — both dashboards are single files you open in a browser,
 no server, no build step. Easier to hand to a colleague that way.
 
