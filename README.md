@@ -34,6 +34,15 @@ correlation with how often it fires. The one control the system actually enforce
 invoice verification gated on goods receipt — holds with zero exceptions across 11,076
 cases; the one it doesn't holds up 1.6% of the time.
 
+**[R2R Process Mining](https://github.com/morichtereur/r2r-process-mining)**
+Same four-step method, aimed at record-to-report instead — except no public GL log
+exists to mine, for the obvious reason that it's what an audit would want to see. So
+this one builds its own: 27,264 journal entries with maker-checker, reconciliation
+breaks, and intercompany elimination baked in on purpose, then independently
+rediscovered from the raw event data. Maker-checker holds with zero exceptions across
+6,548 cases; post-close entries slip through 1.30% of the time, at nearly 15x the rate
+for manual entries versus automated sub-ledger feeds.
+
 ### How I build
 
 Python, Claude API, DuckDB, ChromaDB, SQLite, Streamlit, Power BI. Where something needs a UI
