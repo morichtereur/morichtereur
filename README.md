@@ -1,27 +1,52 @@
-# Moritz Richter
+## Moritz Richter
 
-**AI Engineer — LLM systems: RAG, retrieval, and evals.**
-Finance domain: CFO advisory, GBS, and finance transformation at EY.
+Finance and strategy consultant in Zürich — CFO advisory, global business
+services, finance transformation. Currently at EY.
 
-I build retrieval-augmented systems and the evaluation harnesses that keep them
-honest — measured, provider-swappable, and actually shipped. Finance is the
-domain edge, not a footnote.
+I write code because consulting runs on information that arrives a week too late
+to change a decision. Most of what's here is an attempt to close that gap:
+pipelines that read the market on a schedule, retrieval over financial
+reporting, and process analysis that turns an operation's own exhaust into a
+number someone can act on.
 
-### Selected work
+I'm not a software engineer by training. The projects below run in production
+anyway.
 
-**[dax-intelligence](https://github.com/morichtereur/dax-intelligence)** — RAG over 15 DAX 40 annual reports with page-level citations, plus a retrieval + generation eval harness: precision@k / recall@k, faithfulness, and citation accuracy. Backend-agnostic harness, judge model configurable — implemented on the Claude API.
-`Python` · `ChromaDB` · `Streamlit` · `pytest` · `GitHub Actions`
+### Things I've built
 
-**[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)** — Automated competitor & client intelligence: 69 RSS feeds → LLM relevance scoring → weekly newsletter + interactive dashboard.
-`Python` · `LLM API` · `SQLite`
-
-**[p2p-process-mining](https://github.com/morichtereur/p2p-process-mining)** — Process mining on a real 1.6M-event SAP purchase-to-pay log, plus a citation-grounding eval for LLM-written case narratives: every claim checked against the actual event log, not judged by a second model. Haiku 4.5 matches Sonnet 5 on grounding (100% of 186 citations) at under a third of the cost — the eval's real finding was which model to default to, not whether either hallucinated.
+**[p2p-process-mining](https://github.com/morichtereur/p2p-process-mining)**
+Process mining on a real 1.6M-event SAP purchase-to-pay log. Only 20% of 251,734
+cases follow the process's own most common path — the rest scatter across 11,973
+variants. Rework carries a 19.6-day median cycle-time penalty, and the expensive
+rework is not the common kind. Includes a citation-grounding eval for LLM-written
+case narratives: every claim checked against the raw event log rather than judged
+by a second model.
 `Python` · `DuckDB` · `Claude API` · `matplotlib`
 
-### Stack
-`Python` · `RAG / retrieval` · `LLM evaluation` · `Claude API` · `DuckDB` · `ChromaDB` · `Streamlit` · `pytest` · `GitHub Actions`
+**[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)**
+69 RSS feeds across 33 consulting firms, analyst houses and client companies.
+Claude scores every article 0–3 for strategic relevance; only the top tier
+reaches the Monday brief, the rest stay searchable in a dashboard. 1,132 articles
+scored, 30 reached the brief, 16 weekly editions shipped without a manual step.
+`Python` · `Claude API` · `SQLite`
+
+**[dax-intelligence](https://github.com/morichtereur/dax-intelligence)**
+Ask one question across 15 DAX 40 annual reports, get an answer with company and
+page citations, behind a prompt that will not answer without a source. Retrieval
+and generation eval harness: precision@k / recall@k, faithfulness, citation
+accuracy.
+`Python` · `ChromaDB` · `Streamlit` · `pytest`
+
+### How I build
+
+Python, DuckDB, ChromaDB, SQLite, the Claude API. Where something needs a UI I
+tend to write plain HTML — the dashboards are single files you open in a browser,
+no server, no build step. Easier to hand to a colleague that way.
+
+Where a project makes a claim, there is a script that reproduces it.
 
 ### Background
-MSc Financial Economics, Erasmus University Rotterdam. Previously KPMG.
+
+MSc Financial Economics, Erasmus University Rotterdam.
 
 [Portfolio](https://morichtereur.github.io/) · [LinkedIn](https://www.linkedin.com/in/moritz-richter-28297119a/)
