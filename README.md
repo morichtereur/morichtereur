@@ -23,6 +23,17 @@ case narratives: every claim checked against the raw event log rather than judge
 by a second model.
 `Python` · `DuckDB` · `Claude API` · `matplotlib`
 
+**[gbs-business-case](https://github.com/morichtereur/gbs-business-case)**
+The other half of the same problem: what those findings are worth. Baseline
+measured from the same 1.6M events instead of estimated in a workshop, with
+measured facts and assumptions held in separate files so a reader can see which
+half of the answer is evidence. Monte Carlo over the declared ranges, plus a
+variance decomposition that says which week of diligence buys the most
+confidence. At central assumptions the case does **not** clear the hurdle —
+NPV −€142,931, 26% odds of a positive result — because reworked cases average
+1.48 touches, not the multi-touch slog usually assumed.
+`Python` · `DuckDB` · `NumPy` · `matplotlib`
+
 **[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)**
 69 RSS feeds across 33 consulting firms, analyst houses and client companies.
 Claude scores every article 0–3 for strategic relevance; only the top tier
