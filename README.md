@@ -15,8 +15,11 @@ domain edge, not a footnote.
 **[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)** — Automated competitor & client intelligence: 69 RSS feeds → LLM relevance scoring → weekly newsletter + interactive dashboard.
 `Python` · `LLM API` · `SQLite`
 
+**[p2p-process-mining](https://github.com/morichtereur/p2p-process-mining)** — Process mining on a real 1.6M-event SAP purchase-to-pay log, plus a citation-grounding eval for LLM-written case narratives: every claim checked against the actual event log, not judged by a second model. Haiku 4.5 matches Sonnet 5 on grounding (100% of 186 citations) at under a third of the cost — the eval's real finding was which model to default to, not whether either hallucinated.
+`Python` · `DuckDB` · `Claude API` · `matplotlib`
+
 ### Stack
-`Python` · `RAG / retrieval` · `LLM evaluation` · `Claude API` · `ChromaDB` · `Streamlit` · `pytest` · `GitHub Actions`
+`Python` · `RAG / retrieval` · `LLM evaluation` · `Claude API` · `DuckDB` · `ChromaDB` · `Streamlit` · `pytest` · `GitHub Actions`
 
 ### Background
 MSc Financial Economics, Erasmus University Rotterdam. Previously KPMG.
