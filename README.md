@@ -48,6 +48,15 @@ and generation eval harness: precision@k / recall@k, faithfulness, citation
 accuracy.
 `Python` · `ChromaDB` · `Streamlit` · `pytest`
 
+**[fpa-decision-model](https://github.com/morichtereur/fpa-decision-model)**
+A driver-based forecast for adidas AG, backtested against what actually happened
+instead of validated on its own assumptions. Built from FY2024 data and adidas's
+own stated FY2025 guidance, it beat a naive top-down extrapolation on every
+metric — free cash flow error of 3.4% versus 14.8%. A Monte Carlo run shows
+working-capital assumptions, not revenue growth, explain most of that
+uncertainty.
+`Python` · `NumPy` · `LLM API` · `pytest`
+
 ### How I build
 
 Python, DuckDB, ChromaDB, SQLite, the LLM API. Where something needs a UI I
