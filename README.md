@@ -23,6 +23,15 @@ case narratives: every claim checked against the raw event log rather than judge
 by a second model.
 `Python` · `DuckDB` · `LLM API` · `matplotlib`
 
+**[gbs-agentic-shift](https://github.com/morichtereur/gbs-agentic-shift)**
+McKinsey argues agentic AI is turning the GBS talent pyramid into a diamond — a
+shrinking transactional base and a new layer managing the "agent force."
+Classified 2,110 live GBS/finance-operations postings across ten markets to test
+that claim against the market instead of the pitch deck: agent-ops roles are 2%
+of postings, and the transactional base didn't shrink so much as move to
+third-party providers — 84% transactional there versus 38% at captive functions.
+`Python` · `DuckDB` · `LLM API` · `matplotlib` · `pytest`
+
 **[gbs-business-case](https://github.com/morichtereur/gbs-business-case)**
 The other half of the same problem: what those findings are worth. Baseline
 measured from the same 1.6M events instead of estimated in a workshop, with
@@ -33,13 +42,6 @@ confidence. At central assumptions the case does **not** clear the hurdle —
 NPV −€142,931, 26% odds of a positive result — because reworked cases average
 1.48 touches, not the multi-touch slog usually assumed.
 `Python` · `DuckDB` · `NumPy` · `matplotlib`
-
-**[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)**
-69 RSS feeds across 33 consulting firms, analyst houses and client companies.
-The LLM scores every article 0–3 for strategic relevance; only the top tier
-reaches the Monday brief, the rest stay searchable in a dashboard. 1,132 articles
-scored, 30 reached the brief, 16 weekly editions shipped without a manual step.
-`Python` · `LLM API` · `SQLite`
 
 **[dax-intelligence](https://github.com/morichtereur/dax-intelligence)**
 Ask one question across 15 DAX 40 annual reports, get an answer with company and
@@ -56,6 +58,13 @@ metric — free cash flow error of 3.4% versus 14.8%. A Monte Carlo run shows
 working-capital assumptions, not revenue growth, explain most of that
 uncertainty.
 `Python` · `NumPy` · `LLM API` · `pytest`
+
+**[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)**
+69 RSS feeds across 33 consulting firms, analyst houses and client companies.
+The LLM scores every article 0–3 for strategic relevance; only the top tier
+reaches the Monday brief, the rest stay searchable in a dashboard. 1,132 articles
+scored, 30 reached the brief, 16 weekly editions shipped without a manual step.
+`Python` · `LLM API` · `SQLite`
 
 ### How I build
 
