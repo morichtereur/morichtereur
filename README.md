@@ -21,7 +21,7 @@ variants. Rework carries a 19.6-day median cycle-time penalty, and the expensive
 rework is not the common kind. Includes a citation-grounding eval for LLM-written
 case narratives: every claim checked against the raw event log rather than judged
 by a second model.
-`Python` · `DuckDB` · `Claude API` · `matplotlib`
+`Python` · `DuckDB` · `LLM API` · `matplotlib`
 
 **[gbs-business-case](https://github.com/morichtereur/gbs-business-case)**
 The other half of the same problem: what those findings are worth. Baseline
@@ -36,10 +36,10 @@ NPV −€142,931, 26% odds of a positive result — because reworked cases aver
 
 **[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)**
 69 RSS feeds across 33 consulting firms, analyst houses and client companies.
-Claude scores every article 0–3 for strategic relevance; only the top tier
+The LLM scores every article 0–3 for strategic relevance; only the top tier
 reaches the Monday brief, the rest stay searchable in a dashboard. 1,132 articles
 scored, 30 reached the brief, 16 weekly editions shipped without a manual step.
-`Python` · `Claude API` · `SQLite`
+`Python` · `LLM API` · `SQLite`
 
 **[dax-intelligence](https://github.com/morichtereur/dax-intelligence)**
 Ask one question across 15 DAX 40 annual reports, get an answer with company and
@@ -50,7 +50,7 @@ accuracy.
 
 ### How I build
 
-Python, DuckDB, ChromaDB, SQLite, the Claude API. Where something needs a UI I
+Python, DuckDB, ChromaDB, SQLite, the LLM API. Where something needs a UI I
 tend to write plain HTML — the dashboards are single files you open in a browser,
 no server, no build step. Easier to hand to a colleague that way.
 
