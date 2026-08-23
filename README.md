@@ -109,8 +109,8 @@ normalised to a net price per base unit.
 
 **[gbs-intelligence-agent](https://github.com/morichtereur/gbs-intelligence-agent)**
 69 RSS feeds across 33 consulting firms, analyst houses and client companies.
-The LLM scores every article 0–3 for strategic relevance; only the top tier
-reaches the Monday brief, the rest stay searchable in a dashboard. 1,132
+The LLM scores every article 1–3 for strategic relevance; only a 3 reaches the
+Monday brief, the rest stay searchable in a dashboard. 1,132
 articles scored, 30 reached the brief, 16 weekly editions shipped without a
 manual step.
 `Python` · `LLM API` · `SQLite`
