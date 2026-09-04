@@ -125,6 +125,20 @@ stop a query with no support in the corpus from reaching the model at all.
 Retrieval and generation evals: precision@k, recall@k, claim-level faithfulness.
 `Python` · `ChromaDB` · `Streamlit` · `pytest`
 
+### Tooling
+
+**[deckpilot](https://github.com/morichtereur/deckpilot)**
+Consulting-grade PowerPoint status decks generated from structured programme
+data — work packages, stage gates, a RAID log, a benefit case — into a
+21-slide deck of **native shapes**: selectable text, draggable roadmap bars, a
+real sortable RAID table, nothing an image. Content and layout never mix: a
+spec says what goes on a slide, the theme decides where, which is what makes
+it safe to let a model touch the deck at all — the deterministic builder
+always runs, the LLM overlay is optional and falls back on any failure. A
+geometry linter checks every slide for off-slide, over-margin and colliding
+shapes, and `deckpilot demo` runs end to end with no API key.
+`Python` · `python-pptx` · `pydantic` · `LLM API` · `pytest`
+
 ### How I build
 
 Python, DuckDB, ChromaDB, SQLite, OR-Tools, the LLM API. Where something needs a
